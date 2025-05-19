@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Module 'pt2025_30221_souca_vlad_assigment_3'" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bcb7235-997d-4dd8-b45e-f1dc02d77914" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/ClientBLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/OrderBLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/ProductBLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/ClientNameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/OrderQuantityValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/ProductNameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/ProductPriceValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/ProductQuantityValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Connection/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/AbstractDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/BillDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/ClientDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/ClientGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/MainGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/OrderGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/ProductGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,20 +60,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/souca/Desktop/TP/pt2025_30221_souca_vlad_assigment_3/src/main/java/org/example/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.MainGUI.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/souca/Desktop/TP/pt2025_30221_souca_vlad_assigment_1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/souca/Desktop/TP/pt2025_30221_souca_vlad_assigment_3/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -55,7 +98,13 @@
       <option name="presentableId" value="Default" />
       <updated>1745914437428</updated>
       <workItem from="1745914438396" duration="1282000" />
-      <workItem from="1746481988568" duration="225000" />
+      <workItem from="1746481988568" duration="1280000" />
+      <workItem from="1746515975382" duration="3963000" />
+      <workItem from="1747049533231" duration="11354000" />
+      <workItem from="1747120274246" duration="569000" />
+      <workItem from="1747124389309" duration="1591000" />
+      <workItem from="1747592140434" duration="10037000" />
+      <workItem from="1747654636074" duration="8996000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -65,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746482100181</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1">
+      <option name="closed" value="true" />
+      <created>1746482224814</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746482224814</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,16 +131,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <option name="LAST_COMMIT_MESSAGE" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
