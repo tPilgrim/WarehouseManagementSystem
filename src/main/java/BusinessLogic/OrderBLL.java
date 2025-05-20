@@ -20,6 +20,11 @@ public class OrderBLL {
         validators.add(new OrderQuantityValidator());
     }
 
+    /**
+     * Validates the order using validators.
+     *
+     * @param order the order to validate
+     */
     public void validate(Order order) {
         for (Validator<Order> v : validators) {
             v.validate(order);

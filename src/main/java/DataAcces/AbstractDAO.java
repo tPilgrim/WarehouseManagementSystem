@@ -27,6 +27,12 @@ public class AbstractDAO<T> {
         this.type = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
     }
 
+    /**
+     * Builds a SELECT query for a field
+     *
+     * @param field the column name
+     * @return the SQL query string
+     */
     private String createSelectQuery(String field) {
         StringBuilder sb = new StringBuilder();
         sb.append("SELECT ");
@@ -37,6 +43,11 @@ public class AbstractDAO<T> {
         return sb.toString();
     }
 
+    /**
+     * Finds and returns all rows from the table.
+     *
+     * @return list of all objects from the table
+     */
     public List<T> findAll() {
         List<T> list = new ArrayList<>();
         String query = "SELECT * FROM " + type.getSimpleName();
@@ -53,6 +64,12 @@ public class AbstractDAO<T> {
         return list;
     }
 
+    /**
+     * Finds a row by ID.
+     *
+     * @param id the ID of the object
+     * @return the object with the ID
+     */
     public T findById(int id) {
         Connection connection = ConnectionFactory.getConnection();
         PreparedStatement statement = null;
@@ -75,6 +92,12 @@ public class AbstractDAO<T> {
         return null;
     }
 
+    /**
+     * Creates a list of objects from the database result.
+     *
+     * @param resultSet the result of the SQL query
+     * @return a list of objects T
+     */
     private List<T> createObjects(ResultSet resultSet) {
         List<T> list = new ArrayList<T>();
         Constructor[] ctors = type.getDeclaredConstructors();
@@ -115,6 +138,13 @@ public class AbstractDAO<T> {
         return list;
     }
 
+    /**
+     * Builds an INSERT SQL query for the object.
+     *
+     * @param t the object to insert
+     * @param fieldValues the values to insert
+     * @return the SQL query
+     */
     String insertQuery(T t, List<Object> fieldValues){
         StringBuilder fields = new StringBuilder();
         StringBuilder values = new StringBuilder();
@@ -143,6 +173,12 @@ public class AbstractDAO<T> {
         return "INSERT INTO `" + type.getSimpleName() + "` (" + fields + ") VALUES (" + values + ")";
     }
 
+    /**
+     * Inserts a new row.
+     *
+     * @param t the object to insert
+     * @return the inserted object
+     */
     public T insert(T t) {
         List<Object> fieldValues = new ArrayList<>();
         String query = insertQuery(t, fieldValues);
@@ -174,6 +210,14 @@ public class AbstractDAO<T> {
         return t;
     }
 
+    /**
+     * Builds an UPDATE SQL query for the object.
+     *
+     * @param t the object to update
+     * @param fieldValues the updated values
+     * @param idValue the object's ID
+     * @return the SQL UPDATE query
+     */
     String updateQuery(T t, List<Object> fieldValues, int[] idValue){
         StringBuilder setClause = new StringBuilder();
 
@@ -197,6 +241,12 @@ public class AbstractDAO<T> {
         return "UPDATE `" + type.getSimpleName() + "` SET " + setClause + " WHERE id = ?";
     }
 
+    /**
+     * Updates a row in the database.
+     *
+     * @param t the object to update
+     * @return the updated object
+     */
     public T update(T t) {
         List<Object> fieldValues = new ArrayList<>();
         int[] idValue = new int[1];
@@ -219,6 +269,11 @@ public class AbstractDAO<T> {
         return t;
     }
 
+    /**
+     * Deletes a row by its ID.
+     *
+     * @param id the ID od the object to delete
+     */
     public void delete(int id) {
         String query = "DELETE FROM `" + type.getSimpleName() + "` WHERE id = ?";
 
@@ -231,6 +286,39 @@ public class AbstractDAO<T> {
         } catch (SQLException e) {
             LOGGER.log(Level.WARNING, type.getName() + "DAO:delete " + e.getMessage());
         }
+    }
+
+    public String[] getTableHeaders(T t) {
+
+        Field[] fields = type.getDeclaredFields();
+        String[] headers = new String[fields.length];
+
+        int i = 0;
+        for (Field field : type.getDeclaredFields()) {
+            headers[i] = field.getName();
+            i++;
+        }
+
+        return headers;
+    }
+
+    public Object[][] getTableData(List<T> objects) throws IllegalAccessException {
+
+        int rowCount = objects.size();
+        Field[] fields = objects.get(0).getClass().getDeclaredFields();
+        int colCount = fields.length;
+
+        Object[][] data = new Object[rowCount][colCount];
+
+        for (int i = 0; i < rowCount; i++) {
+            T object = objects.get(i);
+            for (int j = 0; j < colCount; j++) {
+                fields[j].setAccessible(true);
+                data[i][j] = fields[j].get(object);
+            }
+        }
+
+        return data;
     }
 }
 

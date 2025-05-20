@@ -14,6 +14,11 @@ import java.util.List;
 
 public class BillDAO {
 
+    /**
+     * Inserts a new bill into the database
+     *
+     * @param bill the bill to be added
+     */
     public void insert(Bill bill) {
         String query = "INSERT INTO bill (orderId, clientName, productName, quantity, totalPrice) VALUES (?, ?, ?, ?, ?)";
 
@@ -33,6 +38,11 @@ public class BillDAO {
         }
     }
 
+    /**
+     * Retrieves all bills from the databas
+     *
+     * @return a list of all bills
+     */
     public List<Bill> findAll() {
         List<Bill> bills = new ArrayList<>();
         String query = "SELECT * FROM bill";

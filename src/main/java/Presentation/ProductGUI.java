@@ -1,12 +1,15 @@
 package Presentation;
 
 import BusinessLogic.ProductBLL;
+import DataAcces.AbstractDAO;
+import Model.Client;
 import Model.Product;
 import DataAcces.ProductDAO;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.util.List;
 
 /**
  * @author: Souca Vlad-Cristian
@@ -17,7 +20,7 @@ public class ProductGUI extends JFrame {
     private JTable table;
     private DefaultTableModel model;
     private JTextField nameField, priceField, quantityField;
-    private ProductDAO productDAO = new ProductDAO();
+    private AbstractDAO<Product> productDAO = new AbstractDAO<Product>() {};
     private ProductBLL productBLL = new ProductBLL();
     private OrderGUI orderGUI;
 
@@ -46,7 +49,7 @@ public class ProductGUI extends JFrame {
         form.add(quantityField);
         add(form, BorderLayout.NORTH);
 
-        model = new DefaultTableModel(new Object[]{"ID", "Name", "Price", "Quantity"}, 0) {
+        model = new DefaultTableModel() {
             @Override
             public boolean isCellEditable(int row, int column) {
                 return false;
@@ -115,9 +118,13 @@ public class ProductGUI extends JFrame {
     }
 
     public void refreshTable() {
-        model.setRowCount(0);
-        for (Product p : productDAO.findAll()) {
-            model.addRow(new Object[]{p.getId(), p.getName(), p.getPrice(), p.getQuantity()});
+        List<Product> products = productDAO.findAll();
+        try {
+            String[] headers = productDAO.getTableHeaders(products.get(0));
+            Object[][] data = productDAO.getTableData(products);
+            model.setDataVector(data, headers);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
         }
     }
 

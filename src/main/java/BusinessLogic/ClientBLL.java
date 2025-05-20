@@ -27,6 +27,12 @@ public class ClientBLL {
         clientDAO = new ClientDAO();
     }
 
+    /**
+     * Finds a client by its ID.
+     *
+     * @param id the ID of the client
+     * @return the client
+     */
     public Client findClientById(int id) {
         Client client = clientDAO.findById(id);
         if (client == null) {
@@ -35,6 +41,11 @@ public class ClientBLL {
         return client;
     }
 
+    /**
+     * Validates the client using validators.
+     *
+     * @param client the client to validate
+     */
     public void validate(Client client) {
         for (Validator<Client> v : validators) {
             v.validate(client);

@@ -9,32 +9,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bcb7235-997d-4dd8-b45e-f1dc02d77914" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/ClientBLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/OrderBLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/ProductBLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/ClientNameValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/OrderQuantityValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/ProductNameValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/ProductPriceValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/ProductQuantityValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/validators/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Connection/ConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/AbstractDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/BillDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/ClientDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/OrderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataAcces/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/ClientGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/MainGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/OrderGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/ProductGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/ClientBLL.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/ClientBLL.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/OrderBLL.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/OrderBLL.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/ProductBLL.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/ProductBLL.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/ClientNameValidator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/ClientNameValidator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/OrderQuantityValidator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/OrderQuantityValidator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/ProductNameValidator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/ProductNameValidator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/ProductPriceValidator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/ProductPriceValidator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/ProductQuantityValidator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/ProductQuantityValidator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/Validator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/Validator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/BusinessLogic/validators/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Connection/ConnectionFactory.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Connection/ConnectionFactory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Connection/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Connection/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Connection/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Connection/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/DataAcces/AbstractDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/DataAcces/AbstractDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/DataAcces/BillDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/DataAcces/BillDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/DataAcces/ClientDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/DataAcces/ClientDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/DataAcces/OrderDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/DataAcces/OrderDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/DataAcces/ProductDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/DataAcces/ProductDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/DataAcces/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/DataAcces/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/DataAcces/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/DataAcces/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Model/Bill.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Model/Bill.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Model/Client.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Model/Client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Model/Order.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Model/Order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Model/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Model/Product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Model/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Model/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Model/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Model/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Presentation/ClientGUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Presentation/ClientGUI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Presentation/MainGUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Presentation/MainGUI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Presentation/OrderGUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Presentation/OrderGUI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Presentation/ProductGUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Presentation/ProductGUI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Presentation/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Presentation/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/Presentation/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/Presentation/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/org/example/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/org/example/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/org/example/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/org/example/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/org/example/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/org/example/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaDoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BusinessLogic/ClientBLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/ClientBLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BusinessLogic/OrderBLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/OrderBLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BusinessLogic/ProductBLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BusinessLogic/ProductBLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Connection/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataAcces/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataAcces/AbstractDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataAcces/BillDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataAcces/BillDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/ClientGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/ClientGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/ProductGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/ProductGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,27 +108,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MainGUI.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/souca/Desktop/TP/pt2025_30221_souca_vlad_assigment_1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/souca/Desktop/TP/pt2025_30221_souca_vlad_assigment_3/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainGUI.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/souca/Desktop/TP/pt2025_30221_souca_vlad_assigment_1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/souca/Desktop/TP/pt2025_30221_souca_vlad_assigment_3/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -104,7 +152,8 @@
       <workItem from="1747120274246" duration="569000" />
       <workItem from="1747124389309" duration="1591000" />
       <workItem from="1747592140434" duration="10037000" />
-      <workItem from="1747654636074" duration="8996000" />
+      <workItem from="1747654636074" duration="9425000" />
+      <workItem from="1747725063934" duration="9686000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -122,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746482224814</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <option name="closed" value="true" />
+      <created>1747689514772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747689514772</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

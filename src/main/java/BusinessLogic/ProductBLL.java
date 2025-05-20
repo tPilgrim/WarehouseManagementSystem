@@ -25,6 +25,11 @@ public class ProductBLL {
         validators.add(new ProductQuantityValidator());
     }
 
+    /**
+     * Validates the product using validators.
+     *
+     * @param product the product to validate
+     */
     public void validate(Product product) {
         for (Validator<Product> v : validators) {
             v.validate(product);

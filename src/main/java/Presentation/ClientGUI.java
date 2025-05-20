@@ -1,12 +1,14 @@
 package Presentation;
 
 import BusinessLogic.ClientBLL;
+import DataAcces.AbstractDAO;
 import Model.Client;
 import DataAcces.ClientDAO;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.util.List;
 
 /**
  * @author: Souca Vlad-Cristian
@@ -17,8 +19,8 @@ public class ClientGUI extends JFrame {
     private JTable table;
     private DefaultTableModel model;
     private JTextField nameField;
-    private ClientDAO clientDAO = new ClientDAO();
     private ClientBLL clientBLL = new ClientBLL();
+    private AbstractDAO<Client> clientDAO = new AbstractDAO<Client>() {};
 
     public ClientGUI(OrderGUI orderGUI) {
 
@@ -33,7 +35,7 @@ public class ClientGUI extends JFrame {
         form.add(nameField);
         add(form, BorderLayout.NORTH);
 
-        model = new DefaultTableModel(new Object[]{"ID", "Name"}, 0) {
+        model = new DefaultTableModel() {
             @Override
             public boolean isCellEditable(int row, int column) {
                 return false;
@@ -90,9 +92,13 @@ public class ClientGUI extends JFrame {
     }
 
     private void refreshTable() {
-        model.setRowCount(0);
-        for (Client c : clientDAO.findAll()) {
-            model.addRow(new Object[]{c.getId(), c.getName()});
+        List<Client> clients = clientDAO.findAll();
+        try {
+            String[] headers = clientDAO.getTableHeaders(clients.get(0));
+            Object[][] data = clientDAO.getTableData(clients);
+            model.setDataVector(data, headers);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
         }
     }
 }

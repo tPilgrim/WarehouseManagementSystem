@@ -27,6 +27,11 @@ public class ConnectionFactory {
         }
     }
 
+    /**
+     * Creates a new database connection.
+     *
+     * @return a new Connection object
+     */
     private Connection createConnection() {
         Connection connection = null;
 
@@ -39,10 +44,20 @@ public class ConnectionFactory {
         return connection;
     }
 
+    /**
+     * Returns a connection to the database.
+     *
+     * @return the database connection
+     */
     public static Connection getConnection() {
         return singleInstance.createConnection();
     }
 
+    /**
+     * Closes the database connection.
+     *
+     * @param connection the connection to close
+     */
     public static void close(Connection connection) {
         if (connection != null) {
             try {
